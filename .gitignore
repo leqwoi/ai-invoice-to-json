@@ -1,0 +1,27 @@
+# compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# venv
+venv/
+.venv/
+env/
+ENV/
+
+# env
+.env
+.env.*
+!.env.example
+
+# dataset
+dataset/invoices/*
+!dataset/invoices/README.md
+dataset/data
+
+# notebooks
+.ipynb_checkpoints/
+
+# pipeline run artifacts
+outputs/*
+!outputs/.gitkeep

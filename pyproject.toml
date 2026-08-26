@@ -1,0 +1,26 @@
+[project]
+name = "ai-invoice-to-json"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "leqwoi",email = "leqwoi@protonmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pydantic (>=2.13.4,<3.0.0)",
+    "pydantic-settings (>=2.15.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ai_invoice_to_json", from = "src"}]
+
+[tool.poetry.scripts]
+extract-invoices = "ai_invoice_to_json.main:app"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^7.3.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
