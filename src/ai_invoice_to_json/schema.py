@@ -2,7 +2,7 @@ import datetime
 from decimal import Decimal
 from typing import Optional
 
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 class CustomerDetails(BaseModel):
@@ -54,3 +54,10 @@ class Invoice(BaseModel):
                 f"Total price incorrect! Expecting: {self.total_price}, received {actual_total_price}"
             )
         return self
+
+    @field_validator("currency", mode="before")
+    @classmethod
+    def normalize_null_string(cls, v):
+        if isinstance(v, str) and v.strip().lower() in ("null", "none", "n/a", ""):
+            return None
+        return v
