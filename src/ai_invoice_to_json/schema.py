@@ -5,16 +5,38 @@ from typing import Optional
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
+def _normalize_null_string(v):
+    if isinstance(v, str) and v.strip().lower() in ("null", "none", "n/a", ""):
+        return None
+    return v
+
+
 class CustomerDetails(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    contact_name: str = Field(description="Customer's contact name")
-    address: str = Field(description="Customer address")
-    city: str = Field(description="City")
+    contact_name: Optional[str] = Field(
+        default=None, description="Customer's contact name"
+    )
+    address: Optional[str] = Field(default=None, description="Customer address")
+    city: Optional[str] = Field(default=None, description="City")
     postal_code: Optional[str] = Field(default=None, description="Postal Code")
-    country: str = Field(description="Country")
-    phone: str = Field(description="Phone Number")
+    country: Optional[str] = Field(default=None, description="Country")
+    phone: Optional[str] = Field(default=None, description="Phone Number")
     fax: Optional[str] = Field(default=None, description="Fax Number")
+
+    @field_validator(
+        "contact_name",
+        "address",
+        "city",
+        "postal_code",
+        "country",
+        "phone",
+        "fax",
+        mode="before",
+    )
+    @classmethod
+    def normalize_null_string(cls, v):
+        return _normalize_null_string(v)
 
 
 class ProductDetails(BaseModel):
@@ -34,8 +56,8 @@ class Invoice(BaseModel):
     currency: Optional[str] = Field(
         default=None, description="ISO currency code, e.g. USD, EUR"
     )
-    order_id: str = Field(description="Invoice's Order ID")
-    customer_id: str = Field(description="Customer's ID")
+    order_id: Optional[str] = Field(default=None, description="Invoice's Order ID")
+    customer_id: Optional[str] = Field(default=None, description="Customer's ID")
     order_date: datetime.date = Field(description="Order date format:yyyy-mm-dd")
     customer_details: CustomerDetails = Field(description="Customer details model")
     products: list[ProductDetails] = Field(
@@ -55,9 +77,7 @@ class Invoice(BaseModel):
             )
         return self
 
-    @field_validator("currency", mode="before")
+    @field_validator("currency", "order_id", "customer_id", mode="before")
     @classmethod
     def normalize_null_string(cls, v):
-        if isinstance(v, str) and v.strip().lower() in ("null", "none", "n/a", ""):
-            return None
-        return v
+        return _normalize_null_string(v)
