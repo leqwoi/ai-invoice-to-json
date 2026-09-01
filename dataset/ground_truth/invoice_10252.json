@@ -1,0 +1,36 @@
+{
+  "currency": null,
+  "order_id": "10252",
+  "customer_id": "SUPRD",
+  "order_date": "2016-07-09",
+  "customer_details": {
+    "contact_name": "Pascale Cartrain",
+    "address": "Boulevard Tirou, 255",
+    "city": "Charleroi",
+    "postal_code": "B-6000",
+    "country": "Belgium",
+    "phone": "(071) 23 67 22 20",
+    "fax": "(071) 23 67 22 21"
+  },
+  "products": [
+    {
+      "product_id": "20",
+      "product_name": "Sir Rodney's Marmalade",
+      "quantity": 40,
+      "unit_price": 64.8
+    },
+    {
+      "product_id": "33",
+      "product_name": "Geitost",
+      "quantity": 25,
+      "unit_price": 2
+    },
+    {
+      "product_id": "60",
+      "product_name": "Camembert Pierrot",
+      "quantity": 40,
+      "unit_price": 27.2
+    }
+  ],
+  "total_price": 3730
+}

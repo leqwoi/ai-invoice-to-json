@@ -1,0 +1,30 @@
+{
+  "currency": "EUR",
+  "order_id": "10249",
+  "customer_id": "TOMSP",
+  "order_date": "2016-07-05",
+  "customer_details": {
+    "contact_name": "Karin Josephs",
+    "address": "Luisenstr. 48",
+    "city": "Münster",
+    "postal_code": "44087",
+    "country": "Germany",
+    "phone": "0251-031259",
+    "fax": "0251-035695"
+  },
+  "products": [
+    {
+      "product_id": "14",
+      "product_name": "Tofu",
+      "quantity": 9,
+      "unit_price": 18.6
+    },
+    {
+      "product_id": "51",
+      "product_name": "Manjimup Dried Apples",
+      "quantity": 40,
+      "unit_price": 42.4
+    }
+  ],
+  "total_price": 1863.4
+}

@@ -1,0 +1,36 @@
+{
+  "currency": null,
+  "order_id": "10251",
+  "customer_id": "VICTE",
+  "order_date": "2016-07-08",
+  "customer_details": {
+    "contact_name": "Mary Saveley",
+    "address": "2, rue du Commerce",
+    "city": "Lyon",
+    "postal_code": "69004",
+    "country": "France",
+    "phone": "78.32.54.86",
+    "fax": "78.32.54.87"
+  },
+  "products": [
+    {
+      "product_id": "22",
+      "product_name": "Gustaf's Knäckebröd",
+      "quantity": 6,
+      "unit_price": 16.8
+    },
+    {
+      "product_id": "57",
+      "product_name": "Ravioli Angelo",
+      "quantity": 15,
+      "unit_price": 15.6
+    },
+    {
+      "product_id": "65",
+      "product_name": "Louisiana Fiery Hot Pepper Sauce",
+      "quantity": 20,
+      "unit_price": 16.8
+    }
+  ],
+  "total_price": 670.8
+}

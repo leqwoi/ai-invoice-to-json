@@ -1,0 +1,42 @@
+{
+  "currency": "EUR",
+  "order_id": "10474",
+  "customer_id": "PERIC",
+  "order_date": "2026-08-01",
+  "customer_details": {
+    "contact_name": "Guillermo Fernández",
+    "address": "Calle Dr. Jorge Cash 321",
+    "city": "México D.F",
+    "postal_code": null,
+    "country": "Mexico",
+    "phone": "(5) 552-3745",
+    "fax": null
+  },
+  "products": [
+    {
+      "product_id": "1",
+      "product_name": "Tofu",
+      "quantity": 12,
+      "unit_price": 18.6
+    },
+    {
+      "product_id": "2",
+      "product_name": "Rössle Sauerkraut",
+      "quantity": 18,
+      "unit_price": 36.4
+    },
+    {
+      "product_id": "3",
+      "product_name": "Boston Crab Meat",
+      "quantity": 21,
+      "unit_price": 14.7
+    },
+    {
+      "product_id": "4",
+      "product_name": "Rhönbräu Klosterbier",
+      "quantity": 10,
+      "unit_price": 6.2
+    }
+  ],
+  "total_price": 1249.1
+}

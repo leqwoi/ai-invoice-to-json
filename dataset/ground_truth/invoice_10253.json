@@ -1,0 +1,36 @@
+{
+  "currency": null,
+  "order_id": "10253",
+  "customer_id": "HANAR",
+  "order_date": "2016-07-10",
+  "customer_details": {
+    "contact_name": "Mario Pontes",
+    "address": "Rua do Paço, 67",
+    "city": "Rio de Janeiro",
+    "postal_code": "05454-876",
+    "country": "Brazil",
+    "phone": "(21) 555-0091",
+    "fax": "(21) 555-8765"
+  },
+  "products": [
+    {
+      "product_id": "31",
+      "product_name": "Gorgonzola Telino",
+      "quantity": 20,
+      "unit_price": 10
+    },
+    {
+      "product_id": "39",
+      "product_name": "Chartreuse verte",
+      "quantity": 42,
+      "unit_price": 14.4
+    },
+    {
+      "product_id": "49",
+      "product_name": "Maxilaku",
+      "quantity": 40,
+      "unit_price": 16
+    }
+  ],
+  "total_price": 1444.8
+}

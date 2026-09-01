@@ -1,0 +1,36 @@
+{
+  "currency": "EUR",
+  "order_id": "10248",
+  "customer_id": "VINET",
+  "order_date": "2016-07-04",
+  "customer_details": {
+    "contact_name": "Paul Henriot",
+    "address": "59 rue de l'Abbaye",
+    "city": "Reims",
+    "postal_code": "51100",
+    "country": "France",
+    "phone": "26.47.15.10",
+    "fax": "26.47.15.11"
+  },
+  "products": [
+    {
+      "product_id": "11",
+      "product_name": "Queso Cabrales",
+      "quantity": 12,
+      "unit_price": 14
+    },
+    {
+      "product_id": "42",
+      "product_name": "Singaporean Hokkien Fried Mee",
+      "quantity": 10,
+      "unit_price": 9.8
+    },
+    {
+      "product_id": "72",
+      "product_name": "Mozzarella di Giovanni",
+      "quantity": 5,
+      "unit_price": 34.8
+    }
+  ],
+  "total_price": 440
+}

@@ -1,0 +1,36 @@
+{
+  "currency": null,
+  "order_id": "10254",
+  "customer_id": "CHOPS",
+  "order_date": "2016-07-11",
+  "customer_details": {
+    "contact_name": "Yang Wang",
+    "address": "Hauptstr. 29",
+    "city": "Bern",
+    "postal_code": "3012",
+    "country": "Switzerland",
+    "phone": "0452-076545",
+    "fax": null
+  },
+  "products": [
+    {
+      "product_id": "24",
+      "product_name": "Guaraná Fantástica",
+      "quantity": 15,
+      "unit_price": 3.6
+    },
+    {
+      "product_id": "55",
+      "product_name": "Pâté chinois",
+      "quantity": 21,
+      "unit_price": 19.2
+    },
+    {
+      "product_id": "74",
+      "product_name": "Longlife Tofu",
+      "quantity": 21,
+      "unit_price": 8
+    }
+  ],
+  "total_price": 625.2
+}
