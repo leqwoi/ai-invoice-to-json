@@ -38,5 +38,10 @@
       "unit_price": 6.2
     }
   ],
-  "total_price": 1249.1
+  "total_price": 1249.1,
+  "_ambiguous_fields": {
+    "customer_details.contact_name": "Not explicitly lableled",
+    "customer_details.address": "Not explicitly labeled",
+    "order_date": "Document shows 3 candidate dates (issue: 2026-08-29, service period start: 2026-08-01, service period end/execution: 2026-08-31); using service period start as primary ground truth."
+  }
 }
