@@ -22,6 +22,12 @@ class ExtractionAPIError(ExtractionError):
     pass
 
 
+class ExtractionEvalError(ExtractionError):
+    """Raised when an error is encountered while evaluating extraction pipeline."""
+
+    pass
+
+
 class ExtractionUnexpectedError(ExtractionError):
     """Raised when an unexpected error is encountered during extraction."""
 
